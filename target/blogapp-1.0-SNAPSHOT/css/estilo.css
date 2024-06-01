@@ -1,0 +1,381 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #12302d;
+    color: #fff;
+    padding: 6px;
+    text-align: center;
+    border-bottom: 2px solid #062724;
+}
+
+button {
+    align-self: flex-end;
+    background-color: #235752;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 40px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #00423d;
+}
+
+header h1 {
+    margin: 10px;
+    font-size: 2em;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #8fcec9;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #0c151b;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #87cefa;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #6495ed;
+}
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.date {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.blog-card {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+}
+
+.blog-card img {
+    width: 30%;
+    object-fit: cover;
+}
+
+.blog-card .blog-content {
+    padding: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-card .blog-content h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.blog-card .blog-content p {
+    margin: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-image-header {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.blog-info {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blog-info h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.blog-info p {
+    margin: 5px 0;
+}
+
+.action-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5CACEE;
+    color: white;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #3B5998;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 5.5%;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.modal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.close {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.post-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+}
+
+.post-buttons {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.post-buttons  button {
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+.blog-feed {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-area {
+    background-color: #12302d;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px ;
+    margin-bottom: 20px;
+}
+
+.blog-header {
+    background-color: #21635c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px ;
+    margin-bottom: 20px;
+}
+
+.blog-header h2 {
+    margin: 0;
+}
+
+.post {
+    border: 1px solid #12302d;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.post-area, .comment-area {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.post-area img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-area h3 {
+    margin: 0;
+}
+
+.post-area p {
+    padding: 0 10px;
+}
+
+.post-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-details p {
+    color: #235752;
+    font-size: 15px
+}
+
+.post-area .date{
+    font-size: 12px;
+    color: #868686;
+}
+
+.post-details button {
+    width: fit-content;
+    padding: 10px 25px;
+    height: fit-content;
+}
+
+.comment {
+    margin: 20px 10px;
+    padding-left: 10px;
+    border-left: 3px solid #12302d;
+}
+
+.comment .autor {
+    font-weight: bold;
+}
+
+.comment .comment-text {
+    font-size: 14px;
+}
+
+.comment .date{
+    padding-top: 5px;
+    font-size: 11px;
+    color: #868686;
+}
+
+.comment-area button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.comments  {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
